@@ -25,6 +25,9 @@ jobs:
           distribution: temurin
           java-version: 17
 
+      - name: Add sdkmanager to PATH
+        run: echo "$ANDROID_HOME/cmdline-tools/latest/bin" >> $GITHUB_PATH
+
       # Install Android NDK
       - name: Install NDK
         run: |
