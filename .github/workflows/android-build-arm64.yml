@@ -61,4 +61,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: espeak-ng-android-arm64
-          path: build/libespeak-ng*.so
+          path: |
+             build/**/*.so
